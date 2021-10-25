@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.big {
+  height: 100vh;
+  background-color: beige;
+  transition: 2s;
+}
+div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transition: 2s;
+}
+
+.circle {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  z-index: 1;
+}
+div.red {
+  top: 30px;
+  left: 30px;
+  background-color: red;
+}
+div.blue {
+  bottom: 30px;
+  left: 30px;
+  background-color: blue;
+}
+div.green {
+  bottom: 30px;
+  right: 30px;
+  background-color: green;
+}
+div.yellow {
+  top: 30px;
+  right: 30px;
+  background-color: yellow;
+}
+div.red:hover ~ .big {
+  background-color: red;
+}
+div.blue:hover ~ .big {
+  background-color: blue;
+}
+div.green:hover ~ .big {
+  background-color: green;
+}
+div.yellow:hover ~ .big {
+  background-color: yellow;
+}
+div.red:hover ~ .big p.red {
+  opacity: 1;
+}
+div.green:hover ~ .big p.green {
+  opacity: 1;
+}
+div.yellow:hover ~ .big p.yellow {
+  opacity: 1;
+}
+
+div.blue:hover ~ .big p.blue {
+  opacity: 1;
+}
