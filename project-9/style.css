@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: thistle;
+}
+
+.container {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+}
+
+div.circle {
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.red {
+  background-color: red;
+  top: 0;
+  left: 0;
+  animation: cirRed 10s infinite 0.3s;
+}
+
+.blue {
+  background-color: blue;
+  top: 0;
+  right: 10px;
+  animation: cirBlue 10s infinite 0.2s;
+}
+
+.yellow {
+  background-color: yellow;
+  bottom: 0;
+  left: 0;
+  animation: cirYellow 10s infinite 0.1s;
+}
+
+.green {
+  background-color: green;
+  bottom: 0;
+  right: 0;
+  animation: cirGreen 10s linear infinite;
+}
+
+@keyframes cirRed {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 60vw;
+  }
+  50% {
+    top: 60vh;
+    left: 60vw;
+  }
+  75% {
+    top: 60vh;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes cirBlue {
+  0% {
+    top: 0;
+    right: 10px;
+  }
+  25% {
+    top: 0;
+    right: 60vw;
+  }
+  50% {
+    top: 60vh;
+    right: 60vw;
+  }
+  75% {
+    top: 60vh;
+    right: 0;
+  }
+  100% {
+    top: 0;
+    right: 10px;
+  }
+}
+
+@keyframes cirYellow {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  25% {
+    bottom: 0;
+    left: 60vw;
+  }
+  50% {
+    bottom: 60vh;
+    left: 60vw;
+  }
+  75% {
+    bottom: 60vh;
+    left: 0;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes cirGreen {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    bottom: 0;
+    right: 60vw;
+  }
+  50% {
+    bottom: 60vh;
+    right: 60vw;
+  }
+  75% {
+    bottom: 60vh;
+    right: 0;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+  }
+}
